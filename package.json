@@ -1,0 +1,23 @@
+{
+  "name": "05-antisocialfestival",
+  "version": "1.0.0",
+  "description": "Pryecto antiSocialClub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssalgadoi/antiSocialFestival.git"
+  },
+  "keywords": [
+    "SAAS",
+    "Gulp"
+  ],
+  "author": "Ibacache Salgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssalgadoi/antiSocialFestival/issues"
+  },
+  "homepage": "https://github.com/ssalgadoi/antiSocialFestival#readme"
+}
