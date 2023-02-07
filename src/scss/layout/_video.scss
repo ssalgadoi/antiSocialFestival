@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.video {
+    position: relative;
+    max-height: 70rem;
+    min-height: 50rem;
+    overflow: hidden;
+    .overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(91,192,248);
+background: linear-gradient(180deg, rgba(91,192,248,1) 3%, rgba(165,0,255,0.5) 51%, rgba(0,212,255,1) 100%);
+    }
+    video {
+        width: auto;
+        display: block;
+        @include m.tablet {
+            width: 100%;
+        }
+    }
+}
+.contenido-video {
+    z-index: 10;
+    h2 {
+        color: v.$blanco;
+        font-size: 7rem;
+        margin: 0;
+    }
+    p {
+        background-color: v.$cuartoColor;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: v.$negro;
+        font-weight: 1000;
+        font-size: 2.8rem;
+        // margin: 0;
+
+    }
+}
