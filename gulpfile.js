@@ -5,4 +5,4 @@ function tarea( done ) {
     done();
 }
 
-exports.primeraTarea = tarea;
+exports.tarea = tarea;
