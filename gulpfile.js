@@ -1,15 +1,15 @@
-const { src, dest, watch } = (require("gulp"));
-const sass = require("gulp-sass")(require("sass"));
+const { src, dest, watch } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 
 function css( done ) {
-    src("src/scss/app.scss")// Identificar el archivo de SASS
+    src('src/scss/**/*.scss')// Identificar el archivo de SASS
         .pipe(sass()) // Compilarlo
-        .pipe( dest("build/css"))// Almacenarlo en el disco
+        .pipe( dest('build/css'))// Almacenarlo en el disco
 
     done();// Callback que avisa a gulp cuando llegamos al final
 }
 function dev( done ) {
-    watch("src/scss/app.scss", css)
+    watch('src/scss/**/*.scss', css)
 
     done();
 }
