@@ -1,5 +1,6 @@
 // $primario: rgb(0, 129, 201);
 @import 'base/variable';// de esta forma llamamos archivos de otra carpeta
+@import 'contenido/contenido';
 body {
-    background-color: $primario;
+    background-color: $primerColor;
 }
