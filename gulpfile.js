@@ -32,7 +32,6 @@ function imagenes( done ) {
 }
 // nueva tarea wue cambia las fotos a formato webp
 function versionWebp( done ) {
-    
     const opciones = {
         quality: 50// calidad de las imagenes
     };
@@ -42,7 +41,6 @@ function versionWebp( done ) {
     done();
 }
 function versionAvif( done ) {
-    
     const opciones = {
         quality: 50// calidad de las imagenes
     };
@@ -54,7 +52,6 @@ function versionAvif( done ) {
 
 function dev( done ) {
     watch('src/scss/**/*.scss', css);
-
     done();
 }
 exports.css = css;
