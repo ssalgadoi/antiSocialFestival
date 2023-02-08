@@ -449,10 +449,14 @@ img {
 }
 
 .sobre-festival {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5rem;
   padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
 }
 
 .contenido-festival {
