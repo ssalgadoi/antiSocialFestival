@@ -11,7 +11,7 @@
     }
     .dia {
         text-transform: uppercase;
-        margin-bottom: 5rem;
+        margin: 5rem 0;
     }
 }
 .escenarios-contenedor {
@@ -24,7 +24,7 @@
 }
 .escenario {
     padding-top: 2rem;
-    .nombre-escenario {
+    p {
         &:after {
             content: '';
             display: block;
@@ -45,7 +45,23 @@
 }
 .bg-amarillo {
     background-color: v.$cuartoColor;
+    li:nth-child(odd) {
+        background-color: darken(v.$cuartoColor, 22%);
+    }
 }
 .bg-verde {
     background-color: v.$segundoColor;
+    li:nth-child(odd) {
+        background-color: darken(v.$segundoColor, 10%);
+    }
+}
+.calendario {
+    @include m.resetear-lista;
+    li {
+        padding: 2rem;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
 }
