@@ -1,17 +1,18 @@
 @use 'variables' as v;
 
 @mixin phone {
-    @media ( min-width: 480px) {
+    @media (min-width: v.$phone) {
         @content;
     }
 }
+
 @mixin tablet {
-    @media ( min-width: 768px) {
+    @media (min-width: v.$tablet) {
         @content;
     }
 }
 @mixin desktop {
-    @media ( min-width: 992px) {
+    @media (min-width: v.$desktop) {
         @content;
     }
 }
@@ -20,7 +21,7 @@
         @content;
     }
 }
-@mixin grid( $columnas, $espaciado ) {
+@mixin grid($columnas, $espaciado) {
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espaciado;
