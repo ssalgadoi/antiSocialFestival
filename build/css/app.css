@@ -358,6 +358,8 @@ h3 {
 img {
   max-width: 100%;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .header {
@@ -402,7 +404,7 @@ img {
   }
 }
 .navegacion-principal a:hover {
-  color: #FFC93C;
+  color: #FEF46D;
 }
 
 .video {
@@ -440,7 +442,7 @@ img {
   margin: 0;
 }
 .contenido-video p {
-  background-color: #FFC93C;
+  background-color: #FEF46D;
   display: inline-block;
   padding: 1rem 2rem;
   color: #000000;
@@ -454,8 +456,8 @@ img {
 @media (min-width: 768px) {
   .sobre-festival {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
 }
 
@@ -463,15 +465,75 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-festival {
+    margin-top: 0;
+  }
 }
 .contenido-festival h2 {
   margin-bottom: 2rem;
 }
 .contenido-festival .fecha {
-  background-color: #FFC93C;
+  background-color: #FEF46D;
   display: inline-block;
   padding: 1rem 2rem;
   color: #000000;
   font-weight: 300;
   font-size: 2rem;
+}
+
+.lineup {
+  background-color: #F53756;
+  padding: 5rem;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor p {
+  color: #000000;
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario .nombre-escenario:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.cumbia .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.bg-amarillo {
+  background-color: #FEF46D;
+}
+
+.bg-verde {
+  background-color: #5BC0F8;
 }
