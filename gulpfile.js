@@ -57,7 +57,7 @@ function javascript( done ) {
 
 function dev( done ) {
     watch('src/scss/**/*.scss', css);
-    src('src/js/**/*.js', javascript)
+    watch('src/js/**/*.js', javascript);
     done();
 }
 exports.css = css;
