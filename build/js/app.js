@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', function(){
 function iniciarApp() {
     navegacionFija();
     crearGaleria();
-    scrollNav()
+    scrollNav();
 }
-
 function navegacionFija() {
     const barra = document.querySelector('.header');
     const sobreFestival = document.querySelector('.sobre-festival');
@@ -42,7 +41,6 @@ function scrollNav() {
         });
     });
 }
-
 
 function crearGaleria(){
     const galeria = document.querySelector('.galeria-imagenes');
