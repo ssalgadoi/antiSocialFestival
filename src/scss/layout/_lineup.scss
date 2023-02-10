@@ -46,13 +46,13 @@
 .bg-amarillo {
     background-color: v.$cuartoColor;
     li:nth-child(odd) {
-        background-color: darken(v.$cuartoColor, 22%);
+        background-color: darken(v.$segundoColor, 0%);
     }
 }
 .bg-verde {
     background-color: v.$segundoColor;
     li:nth-child(odd) {
-        background-color: darken(v.$segundoColor, 10%);
+        background-color: darken(v.$cuartoColor, 0%);
     }
 }
 .calendario {
