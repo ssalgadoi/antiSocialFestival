@@ -407,7 +407,7 @@ img {
   }
 }
 .navegacion-principal a:hover {
-  color: #FEF46D;
+  color: #F53756;
 }
 
 .video {
@@ -430,7 +430,7 @@ img {
   width: auto;
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .video video {
     width: 100%;
   }
@@ -445,12 +445,13 @@ img {
   margin: 0;
 }
 .contenido-video p {
-  background-color: #FEF46D;
+  background-color: #F53756;
   display: inline-block;
   padding: 1rem 2rem;
-  color: #000000;
-  font-weight: 1000;
+  color: #FFFFFF;
+  font-weight: 700;
   font-size: 2.8rem;
+  margin: 0;
 }
 
 .sobre-festival {
@@ -479,12 +480,13 @@ img {
   margin-bottom: 2rem;
 }
 .contenido-festival .fecha {
-  background-color: #FEF46D;
+  background-color: #F53756;
   display: inline-block;
   padding: 1rem 2rem;
-  color: #000000;
-  font-weight: 300;
-  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 0;
 }
 
 .lineup {
@@ -537,14 +539,14 @@ img {
   background-color: #FEF46D;
 }
 .bg-amarillo li:nth-child(odd) {
-  background-color: #f9e802;
+  background-color: #5bc0f8;
 }
 
 .bg-verde {
   background-color: #5BC0F8;
 }
 .bg-verde li:nth-child(odd) {
-  background-color: #2aadf6;
+  background-color: #fef46d;
 }
 
 .calendario {
@@ -626,4 +628,55 @@ img {
 }
 .btn-cerrar:hover {
   cursor: pointer;
+}
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 2rem;
+}
+
+.pase .nombre-pase {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+}
+.pase-header, .pase-footer {
+  padding: 0.5rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pase-header {
+  background-color: #F53756;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.pase-body {
+  background-color: #FFFFFF;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li, .pase-body ul :nth-child(odd) {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase-footer {
+  background-color: #7f49a4;
+}
+.pase-footer p {
+  font-size: 2.4rem;
+  font-weight: 700;
 }
